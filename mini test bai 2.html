@@ -1,36 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>bài 2</title>
+  <meta charset="UTF-8">
+  <title>bai 9</title>
 </head>
 <body>
-<form>
-    <p>
-        Nhập a :<input type="number" id="a">
-    </p>
-    <br>
-    <p>
-        Nhập b :<input type="number" id="b">
-    </p>
-    <p >
-        <button type="button" onclick="ketqua()">Hiện thị kết quả</button>
-    </p>
-    a^2 = :<p id="P"></p>
-    a^b = :<p id="S"></p>
-</form>
+<script>
+  let i =19;
+  let count = 0;
+  while (count<=20){
+    if (i%2==0&&i%3==0){
+      document.write(i+ " ");
+      count++;
+    }
+    i++;
+  }
+</script>
 </body>
 </html>
-<script>
-    function ketqua(){
-        let a = document.getElementById('a').value;
-        let b = document.getElementById('b').value;
-        a = parseFloat(a);
-        b = parseFloat(b);
-        let P = a*a;
-        let S = a**b;
-        document.getElementById("P").innerHTML = P;
-        document.getElementById("S").innerHTML = S;
-    }
-
-</script>

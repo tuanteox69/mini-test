@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mini test</title>
+</head>
+<body>
+<form>
+    <p>
+        Nhập a :<input type="number" id="a">
+    </p>
+    <br>
+    <p>
+        Nhập b :<input type="number" id="b">
+    </p>
+    <p>
+        <button type="button" onclick="ketqua()">Hiện thị kết quả</button>
+    </p>
+    Tổng các số từ a đến b là : <p id="sum"></p>
+</form>
+</body>
+</html>
+<script>
+    function ketqua() {
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        a = parseFloat(a);
+        b = parseFloat(b);
+        let sum = 0;
+        for (let i = a; i <= b; i++) {
+            sum = sum + i;
+        }
+        document.getElementById("sum").innerHTML = sum;
+    }
+
+</script>
